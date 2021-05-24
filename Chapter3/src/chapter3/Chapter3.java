@@ -88,6 +88,7 @@ public class Chapter3 {
             System.out.println("Your number is in the ones");
         }
 
+        // chain of if else if else if... are mutually exclusion - one and only one will run
         if (someNumber >= 1_000_000_000) {
             System.out.println("Your number is in the billions");
         } else if (someNumber >= 100_000_000) {
@@ -108,6 +109,76 @@ public class Chapter3 {
             System.out.println("Your nubmer is in the tens");
         } else {
             System.out.println("Your nubmer is in the ones");
+        }
+        
+        // logical and
+        // true && true == true
+        // true && false == false
+        // false && true == false
+        // false && false == false
+        
+        // logical or
+        // true || true == true
+        // true || false == true
+        // false || true == true
+        // false || false == false
+        
+        
+        // NOT mutually exclusive - be careful with the if blocks
+        if ( someNumber >= 1_000_000_000 ){
+            System.out.println("Your number is in the billions");
+        }
+        if ( someNumber < 1_000_000_000 && someNumber >= 100_000_000 ){
+            System.out.println("Your number is in the hundred millions");
+        }
+        if ( someNumber < 100_000_000 && someNumber >= 10_000_000 ){
+            System.out.println("Your number is in the ten millions");
+        }
+        if ( someNumber < 10_000_000 && someNumber >= 1_000_000 ){
+            System.out.println("Your number is in the millions");
+        }
+        if ( someNumber < 1_000_000 && someNumber >= 100_000 ){
+            System.out.println("Your number is in the hundred thousands");
+        }
+        if ( someNumber < 100_000 && someNumber >= 10_000 ){
+            System.out.println("Your number is in the ten thousands");
+        }
+        if ( someNumber < 10_000 && someNumber >= 1_000 ){
+            System.out.println("Your number is in the thousands");
+        }
+        if ( someNumber < 1_000 && someNumber >= 100 ){
+            System.out.println("Your number is in the hundreds");
+        }
+        if ( someNumber < 100 && someNumber >= 10 ){
+            System.out.println("Your number is in the tens");
+        } // you can't have a default because there are no else blocks
+        if ( someNumber < 10 && someNumber >= 1 ){
+            System.out.println("Your number is in the tens");
+        }
+        
+        System.out.println("What's the temperature outside?");
+        int temperature = Integer.parseInt(keyboard.nextLine());
+        // farenhiet == sad
+        if ( temperature < 32 ){
+            System.out.println("Bring your winter coat");
+        }
+        else if ( temperature < 50){
+            System.out.println("Bring your jacket");
+        }
+        else{
+            System.out.println("you're fine in a t-shirt");
+        }
+        
+        System.out.println("What's the weather like? (rain, snow, sun)");
+        String weather = keyboard.nextLine();
+        
+        // don't use == for strings
+        if ( weather == "rain" ){
+            System.out.println("bring an umbrella");
+        } else if ( weather == "snow"){
+            System.out.println("Bring your gloves");
+        } else{
+            System.out.println("it's a nice day!");
         }
 
     }
