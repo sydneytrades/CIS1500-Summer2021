@@ -205,11 +205,9 @@ public class Chapter3 {
         }
         System.out.println("bring your " + item + "!");
 
-        
         String anotherItem;
         // can't switch using equalsIgnoreCase
-        switch (weather.toLowerCase())
-        {
+        switch (weather.toLowerCase()) {
             case "rain":
                 anotherItem = "umbrella";
                 break;
@@ -218,9 +216,9 @@ public class Chapter3 {
                 break;
             default:
                 anotherItem = "sunscreen";
-                // no break needed, the switch is already done
+            // no break needed, the switch is already done
         }
-        
+
         System.out.println("Enter how much money you have for lunch: ");
         double lunchMoney = Double.parseDouble(keyboard.nextLine());
 
@@ -230,14 +228,25 @@ public class Chapter3 {
         } else {
             lunchChoice = "Ramen Noodles";
         }
-        
-        System.out.println("lunch tody is: " + lunchChoice);
+
+        System.out.println("lunch today is: " + lunchChoice);
 
         // ternary expression or condional operator
         String otherLunchChoice = lunchMoney < 5.00 ? "Ramen Noodles" : "Burger King";
-        System.out.println("lunch tody is: " + otherLunchChoice);
+        System.out.println("lunch today is: " + otherLunchChoice);
+
+        System.out.println(String.format("Lunch today is: %s", otherLunchChoice));
+
+        System.out.println(
+                "You have $" + lunchMoney + " for lunch, so lunch today is: " + otherLunchChoice);
+
+        // no new line character =(
+        System.out.printf("You have $%.2f for lunch, so lunch today is: %s\n",
+                         lunchMoney, otherLunchChoice);
         
-        
+        System.out.println(
+                String.format("You have $%.2f for lunch, so lunch today is: %s",
+                         lunchMoney, otherLunchChoice));
     }
 
 }
