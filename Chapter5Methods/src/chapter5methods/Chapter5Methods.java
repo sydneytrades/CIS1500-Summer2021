@@ -12,36 +12,35 @@ public class Chapter5Methods {
 
         if (choice.equalsIgnoreCase("manage")) {
             manageItemsForSaleAndSetPrices();
-        }
-        else if (choice.equalsIgnoreCase("shop")){
+        } else if (choice.equalsIgnoreCase("shop")) {
             shopForItems();
         }
-        
+
         methodAExampleMethodsCallingMethods();
-        
+
         int first = 42;
         int second = 99;
-        
+
         System.out.println(addNumbers(first, second));
-        
+
         System.out.println("First: " + first);
         System.out.println("Second: " + second);
     }
-    
+
     // primitive types  like int and double are passed by value ( copies )
-    public static int addNumbers(int firstNumber, int secondNumber){
+    public static int addNumbers(int firstNumber, int secondNumber) {
         firstNumber += 10;
         secondNumber -= 10;
         return firstNumber + secondNumber;
     }
-    
-    public static void manageItemsForSaleAndSetPrices(){
+
+    public static void manageItemsForSaleAndSetPrices() {
         String itemName = promptForItemName();
-            double price = promptForPrice(itemName);
-            double anotherPrice = promptForPrice(promptForItemName());
+        double price = promptForPrice(itemName);
+        double anotherPrice = promptForPrice(promptForItemName());
     }
-    
-    public static void shopForItems(){
+
+    public static void shopForItems() {
         System.out.println("Shop for items...");
     }
 
@@ -74,7 +73,8 @@ public class Chapter5Methods {
         //Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter the price of " + itemName);
         double price = Double.parseDouble(keyboard.nextLine());
-        
+
+        // this won't change the value of itemName in main
         itemName = "Apples";
 
         return price;
