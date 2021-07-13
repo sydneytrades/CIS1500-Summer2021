@@ -18,11 +18,11 @@ public class Mug {
         this.color = color;
     }
 
-    private int getMaxVolumeInMililiters() {
+    public int getMaxVolumeInMililiters() {
         return maxVolumeInMililiters;
     }
 
-    private void setMaxVolumeInMililiters(int maxVolumeInMililiters) {
+    public void setMaxVolumeInMililiters(int maxVolumeInMililiters) {
         if (maxVolumeInMililiters < 0) {
             this.maxVolumeInMililiters = 0;
         } else {
