@@ -6,6 +6,7 @@ public class Rectangle extends Polygon {
         super(4);
     }
 
+    // changes the behavior of the super class version
     @Override
     public void setSideLength(int sideIndex, int length) {
         if (sideIndex == 0 || sideIndex == 2) {
