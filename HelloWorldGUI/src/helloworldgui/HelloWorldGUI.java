@@ -26,7 +26,7 @@ public class HelloWorldGUI extends Application {
     @Override
     public void start(Stage stage) throws Exception {
          // change the name of your fxml file to match
-        Parent root = FXMLLoader.load(getClass().getResource("HelloWorldGUI.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Layouts.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("GUI GUI GUI");
         stage.setScene(scene);
