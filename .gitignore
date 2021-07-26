@@ -54,3 +54,6 @@ hs_err_pid*
 /Project3/build/
 /Chapter10/nbproject/private/
 /Chapter10/build/
+
+/HelloWorldGUI/nbproject/private/
+/HelloWorldGUI/build/
