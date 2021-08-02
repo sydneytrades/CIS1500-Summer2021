@@ -57,3 +57,5 @@ hs_err_pid*
 
 /HelloWorldGUI/nbproject/private/
 /HelloWorldGUI/build/
+/ControlExamples/nbproject/private/
+/ControlExamples/build/
