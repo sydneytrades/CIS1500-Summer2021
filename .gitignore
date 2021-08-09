@@ -60,3 +60,7 @@ hs_err_pid*
 /ControlExamples/nbproject/private/
 /ControlExamples/build/
 /ControlExamples/dist/
+/Misc/nbproject/private/
+/Misc/build/
+/GUIByProgram/nbproject/private/
+/GUIByProgram/build/
